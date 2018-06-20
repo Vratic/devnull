@@ -9,3 +9,49 @@
         "*.js": "javascriptreact"
     }
 }
+
+
+SNIPPETS
+
+{
+	"console" : {
+		"prefix" : "cl",
+		"body" : [
+			"console.log('$1')",
+		],
+		"description": "Log output to console"
+	},
+	"new class" : {
+		"prefix" : "rc",
+		"body" : [
+			"import React from 'react'",
+			"import { connect } from 'react-redux'",
+			"import PropTypes from 'prop-types'",
+			"",
+			"const mapStateToProps = (state, ownProps) => {",
+			"\treturn ({",
+			"",
+			"\t})",
+			"}",
+			"",
+			"const mapDispatchToProps = {",
+			"",
+			"}",
+			"",
+			"export class $1 extends React.Component {",
+			"\tstatic propTypes = {",
+			"",
+			"\t}",
+			"",
+			"\trender() {",
+			"\t\treturn (",
+			"\t\t\t<div>$1</div>",
+			"\t\t)",
+			"\t}",
+			"}",
+			"",			
+			"export default connect(mapStateToProps, mapDispatchToProps)($1)"
+		],
+		"description": "React JS new class"
+	}
+}
