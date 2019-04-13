@@ -12,14 +12,34 @@
 
 
 SNIPPETS
-
 {
 	"console" : {
 		"prefix" : "cl",
 		"body" : [
-			"console.log('$1')",
+			"console.log($1)",
 		],
 		"description": "Log output to console"
+	},
+	"update": {
+		"prefix": "sd",
+		"body": [
+			"static getDerivedStateFromProps(props, state) {",
+			"\t$1",
+			"\treturn { }",
+			"}"
+		]
+	},
+	"constructor": {
+		"prefix": "cc",
+		"body": [
+			"constructor(props) {",
+			"\tsuper(props)",
+			"",
+			"\tthis.state = {",
+			"\t\t$1",
+			"\t}",
+			"}"
+		]
 	},
 	"new class" : {
 		"prefix" : "rc",
@@ -45,7 +65,7 @@ SNIPPETS
 			"\t}",
 			"",
 			"\tshouldComponentUpdate(nextProps, nextState) {",
-			"\t\treturn !deepEqual(nextProps, this.props)",
+			"\t\treturn !deepEqual(nextProps, this.props) || !deepEqual(nextState, this.state)",
 			"\t}",
 			"",
 			"\trender() {",
