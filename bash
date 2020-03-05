@@ -10,4 +10,4 @@ export LSCOLORS=ExFxBxDxCxegedabagacad
 
 # CMD WINDOWS
 env var:
-PRMOPT $E[0;33;40m$M$_$E[35;40m$d$s$t$h$h$h$h$h$h$E[1;30;40m[$E[0;36;40m%computername%$E[1;30;40m]$E[1;33;40m$p $E[1;30;40m$g $E[0;37;40m
+PRMOPT $E[1;30;40m[$E[0;36;40m%computername%$E[1;30;40m]$E[1;33;40m$p $E[1;30;40m$g $E[0;37;40m
