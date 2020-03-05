@@ -9,5 +9,11 @@ export LSCOLORS=ExFxBxDxCxegedabagacad
 
 
 # CMD WINDOWS
+
+Click / press Start
+type env
+Click Edit environment variables for your account
+Edit / Add (User variables) a PROMPT variable
+
 env var:
 PRMOPT $E[1;30;40m[$E[0;36;40m%computername%$E[1;30;40m]$E[1;33;40m$p $E[1;30;40m$g $E[0;37;40m
