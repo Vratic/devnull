@@ -1,15 +1,55 @@
+SETT
+
 {
-    "editor.fontSize": 14,
-    "eslint.autoFixOnSave": true,
     "[javascriptreact]": {
         "editor.insertSpaces": true,
-        "editor.tabSize": 2
+        "editor.tabSize": 2,
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
     "files.associations": {
         "*.js": "javascriptreact"
-    }
+    },
+    // "eslint.autoFixOnSave": true,
+    "editor.codeActionsOnSave": {
+        "source.fixAll.eslint": true
+    },
+    "editor.minimap.enabled": false,
+    "window.zoomLevel": 1,
+    "explorer.confirmDelete": false,
+    "workbench.activityBar.visible": true,
+    "editor.tabSize": 2,
+    "files.autoSave": "afterDelay",
+    "stylelint.autoFixOnSave": true,
+    "tabnine.experimentalAutoImports": true,
+    "terminal.integrated.shell.windows": "C:\\Users\\beleni\\AppData\\Local\\Programs\\Git\\bin\\bash.exe",
+    "workbench.colorCustomizations" : {
+        "terminal.foreground" : "#caf0f8",
+        "terminal.background" : "#383737"
+    },
+    "stylelint.useLocal": false,
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "files.saveConflictResolution": "overwriteFileOnDisk",
+    "editor.formatOnSave": true,
+    
 }
 
+
+KEY
+// Place your key bindings in this file to override the defaults
+[
+  {
+    "key": "ctrl+alt+.",
+    "command": "workbench.action.terminal.focusNext"
+  },
+  {
+    "key": "ctrl+alt+,",
+    "command": "workbench.action.terminal.focusPrevious"
+  },
+  {
+    "key": "alt+d",
+    "command": "deleteWordEndRight"
+  }
+]
 
 SNIPPETS
 {
